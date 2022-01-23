@@ -13,6 +13,7 @@ async def async_craw(url):
 
 loop = asyncio.get_event_loop()
 
+
 tasks = [
     loop.create_task(async_craw(url))
     for url in blog_spider.urls]
